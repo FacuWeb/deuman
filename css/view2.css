@@ -1,0 +1,17 @@
+/* @override 
+	http://d.balas.pt/verticalgd/packages/esk/blocks/social_links/templates/esk_social_text/view.css?* */
+
+.social-links {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.social-links-item:not(:first-child) {
+	
+}
+
+.social-link {
+	color: inherit;
+	text-decoration: none;
+}

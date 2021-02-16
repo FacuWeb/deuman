@@ -1,0 +1,35 @@
+/* @override 
+	http://d.balas.pt/verticalgd/packages/esk/blocks/image_slider/templates/esk_flickity_slider/view.css?* */
+
+
+
+
+/*.esk-flickity-slider {
+	height: 250px;
+	width: 100%;
+}*/
+
+.esk-flickity-slide {
+	height: 100%;
+	width: 100%;
+}
+
+.esk-flickity-image {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	display: block;
+}
+
+.esk-flickity-slider .flickity-page-dots {
+	bottom: var(--padding);
+}
+
+.flickity-page-dots .dot {
+	background: white;
+	opacity: 1;
+}
+
+.flickity-page-dots .dot.is-selected {
+	background: black;
+}

@@ -1,0 +1,150 @@
+/* @group basic */
+
+:root {	
+
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+	font-size: 100%;
+	box-sizing: border-box;
+}
+
+:focus {
+	outline-style:none;
+	box-shadow:none;
+	border-color:transparent;
+}
+
+.ccm-page * {
+	-webkit-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+	
+}
+
+.toggle {
+	background: none;
+	border: none;
+	padding: 0;
+	margin: 0;
+	-webkit-appearance: none;
+	appearance: none;
+	
+	box-shadow: none;
+	display: grid;
+	align-content: center;
+	justify-content: center;
+	cursor: pointer;
+	line-height: .1!important;
+}
+
+.toggle > * {
+	pointer-events: none;
+}
+
+/* @end */
+
+/* @group helpers */
+
+/* Ipad */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+	
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.group:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* @end */
+
+
+
+/* 
+	Print styles
+*/
+
+@media print {
+    *, *:before, *:after {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+    
+    a, a:visited {
+        text-decoration: underline;
+    }
+    
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+    
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+    
+    a[href^="#"]:after, a[href^="javascript:"]:after {
+        content: "";
+    }
+    
+    pre, blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+    
+    thead {
+        display: table-header-group;
+    }
+    
+    tr, img {
+        page-break-inside: avoid;
+    }
+    
+    img {
+        max-width: 100% !important;
+    }
+    
+    p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+    }
+    
+    h2, h3 {
+        page-break-after: avoid;
+    }
+}
